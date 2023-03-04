@@ -9,12 +9,68 @@ class HomeBodyContent extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(children: [
         const CustomListTitle(),
-        Wrap(
-          alignment: WrapAlignment.center,
-          spacing: 2,
+        Table(
           children: const [
-            CustomMenuButtom(),
-            CustomMenuButtom(),
+            TableRow(children: [
+              CustomMenuButtom(
+                name: 'General',
+                color: Colors.blue,
+                icon: Icons.menu,
+              ),
+              CustomMenuButtom(
+                name: 'Transport',
+                color: Colors.pink,
+                icon: Icons.emoji_transportation,
+              ),
+            ]),
+            TableRow(children: [
+              CustomMenuButtom(
+                name: 'Shopping',
+                color: Colors.green,
+                icon: Icons.shopping_bag,
+              ),
+              CustomMenuButtom(
+                name: 'Paper',
+                color: Colors.orange,
+                icon: Icons.pause_presentation_rounded,
+              ),
+            ]),
+            TableRow(children: [
+              CustomMenuButtom(
+                name: 'Cloud',
+                color: Colors.blueAccent,
+                icon: Icons.cloud,
+              ),
+              CustomMenuButtom(
+                name: 'Grocery',
+                color: Colors.deepPurple,
+                icon: Icons.shopping_basket,
+              ),
+            ]),
+            TableRow(children: [
+              CustomMenuButtom(
+                name: 'Cloud',
+                color: Colors.blueAccent,
+                icon: Icons.cloud,
+              ),
+              CustomMenuButtom(
+                name: 'Grocery',
+                color: Colors.deepPurple,
+                icon: Icons.shopping_basket,
+              ),
+            ]),
+            TableRow(children: [
+              CustomMenuButtom(
+                name: 'Cloud',
+                color: Colors.blueAccent,
+                icon: Icons.cloud,
+              ),
+              CustomMenuButtom(
+                name: 'Grocery',
+                color: Colors.deepPurple,
+                icon: Icons.shopping_basket,
+              ),
+            ]),
           ],
         ),
       ]),
